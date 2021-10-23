@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-menu{
+    background-image: -moz-linear-gradient(to right,rgb(138, 59, 73), pink 75%  );
+    /*transition: background 300ms ease-in-out;*/
+   display: flex;
+   justify-content: space-between;
+   
+}
+.header-banner{
+    background-image: url(../img/Velas\ recortada\ titulo.png);
+    height: 601px;
+    
+}
+.header-banner img{
+    padding-left: 3%;
+    padding-top: 2%;
+    height: 30%;
+}
+
+
+.titulo {
+    font-size: 50px;
+    text-align: center ;
+    padding-top: 170px;
+    color:white;
+    text-shadow: -1px 0 rgb(126, 4, 4), 0 1px rgb(126, 4, 4), 1px 0 rgb(126, 4, 4), 0 -1px rgb(126, 4, 4); 
+}
+
+
+.titulo-quienes-somos{
+color:gray
+}
+
+#nuestros-productos {
+    color:darkslategrey
+}
+
+ul.menu{
+    display: flex;
+    
+    
+}
+
+ul.menu li.links-menu{
+    list-style: none;
+    margin-left: 10px;
+    color: black;
+   
+}
+
+
+ul.menu li.links-menu a{
+    text-decoration: none;
+    
+}
+
+div.caja-quienes-somos{
+    border: 1px solid black;
+    height: 375px;
+    width: 49%;
+    padding: 2%;
+    font-size: 30px;
+    overflow: auto;
+   }
+
+.caja-imagen-qs{
+    width: 45%;
+    height: 350px;
+    background-image: url(../img/Logo\ 02.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+    position:relative;
+    animation-direction: normal;
+}
+
+
+@keyframes animation{
+    0%{
+        left: 0px;
+        top:0px
+
+    }
+
+    25%{
+        left: 300px;
+        top:0px
+    }
+
+}
+
+
+
+.div-texto-imagen{
+    height: 375px;
+    width: 100%;
+    display: flex; 
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 20%;
+}
+
+section{
+    margin-top: 80px;
+}
+
+h2{
+    text-align: center ;
+    color:darksalmon
+}
+
+.caja-nuestros-productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-velas{
+    text-decoration: none;
+}
+.FooterContainer { /* Footer*/
+    display: block;
+    background-color: #d3c6c6;
+    margin: 100px; }
+  
+.wrapper-container {
+    background-color: #d3c6c6;
+    padding: 42px 30px 25px 42px;
+    margin: 0;
+    padding: 0 15px; }
+
+.section-links {
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    margin: 0px;
+    padding-top: 20px;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline; }
+
+.section-Nosotros {
+    flex: 1 1 0;
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+.section-ayuda {
+    flex: 1 1 0;
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+.section-dondeEstamos {
+    flex: 1 1 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.sub-footer {
+    padding-top: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+      
+
+.imagen-velas {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.imagen-velas  img:hover {
+    transform:scale(1.3)
+}
+
+.imagen-indumentaria {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.imagen-indumentaria  img:hover {
+    transform:scale(1.3)
+}
+
+.imagen-accesorios {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.imagen-accesorios  img:hover {
+    transform:scale(1.3)
+}
+
+
+
+
+ .imagen-velas {
+    display: inline-flex;
+    justify-content:space-evenly;
+    border: 2px solid black;
+    
+}
+
+
+.imagen-accesorios {
+    display: inline-flex;
+    justify-content:space-evenly;
+    border: 2px solid black;
+}
+
+.imagen-indumentaria {
+    display: inline-flex;
+    justify-content:space-evenly;
+    border: 2px solid black;
+    
+}
+
+
+h3 {
+    font-size: 25px;
+    font-family:cursive;
+    font-weight: bolder;
+     
+}
+
+.menu {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body{
+    background-image: url(../);
+    background-repeat:round
+    
+}
+
+
+form{
+    width:400px;
+    padding: 50px;
+    border-radius:20px;
+    margin:auto;
+    background-color:rgb(245, 196, 196);
+}
+
+form label{
+    width:72px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+}
+
+form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+} 
+
+
+form input[type="reset"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+} 
+.background{
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+    
+    
+   
+    
+    
+    
+
+
+
+
+
+
+
