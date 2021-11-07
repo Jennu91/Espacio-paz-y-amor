@@ -1,133 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Espacio Paz y Amor</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header class="header-banner">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categorias
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="views/indumentaria.html">Indumentaria</a></li>
-                      <li><a class="dropdown-item" href="views/accesorios.html">Accesorios</a></li>
-                      <li><a class="dropdown-item" href="views/velas.html">Velas</a></li>
+                <a class="navbar-brand" href="#">Paz & Amor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./views/accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="./views/indumentaria.html">Indumentaria</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./views/velas.html">Velas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                  </div>
-                </ul>
-              </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Encontrá tu producto"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-          </nav>
-        
-          <h1 class="titulo">ESPACIO AMOR Y PAZ</h1>        
-        </header>
+        </nav>
+    </header>
 
-        <main class="main">
-            <br>
-            <div class="div-texto-imagen">
-                <div class="caja-quienes-somos">
-                    <h2 class= "titulo-quienes-somos">Quienes somos</h2>
-                    <p>
-                       <b>"Bienvenido a mi pequeño hogar ..... Ahora ..... Relájate y sé feliz !!!
-                        Mi ingrediente secreto SIEMPRE es el AMOR ...
-                        Pienso, creo, sueño y me atrevo ... porque cuando nada es seguro, todo es posible."</b> 
-                    </p>
-                </div>
-                <div class="video-Velas">
-                    <iframe width="800" height="375" src="https://www.youtube.com/embed/Xp-8_ZGXMjg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+    <main class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            
-                    
-        </main>
-   
-    <section>
-        <h2 id="nuestros-productos">Nuestros productos</h2>
-
-        <div class="caja-nuestros-productos">
-            <div class="Boton">
-                <a href="views/velas.html"><input type="button" value="Velas" class="boton"></button></a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Slider1.PNG" class="d-block w-100" alt="...">
                 </div>
-            <div>
-                <h3 class="titulo-velas"><a href="">Velas</a></h3>
-                <div class="imagen-velas">
-                <img src="img/velas.jpg" alt="velas" width="300px">
-            </div>
-            </div>
-            
-            <div>
-                <h3 class="titulo-indumentaria"><a href="views/indumentaria.html">Indumentaria</a></h3>
-                <div class="imagen-indumentaria">
-                <img src="img/jean.jpg" alt="velas" width="300px"> 
-                </div>
-
-            </div>
-                   
-            <div>
-                <h3 class="titulo-accesorios"><a href="views/accesorios.html">Accesorios</a></h3>
-                <div class="imagen-accesorios">
-                <img src="img/accesorios.jpg" alt="accesorios" width="300px">
+                <div class="carousel-item">
+                    <img src="./img/Slider2.PNG" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </main>
 
-        
-        
-
+    <section class="container-fluid">
+        <h2 class="mb-5" id="nuestros-productos">Nuestros productos</h2>
+        <article class="row">
+            <div class="card col-4" >
+                <img src="./img/accesorio1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestros Accesorios</h5>
+                    <a href="./views/accesorios.html" class="btn btn-primary">Comprá</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="./img/jean.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestra Indumentaria</h5>
+                    <a href="./views/indumentaria.html" class="btn btn-primary">Comprá</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="./img/velas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestras Velas</h5>
+                    <a href="./views/velas.html" class="btn btn-primary">Comprá</a>
+                </div>
+            </div>
+        </article>
     </section>
 
-    <footer>
-        <div class="Footer-Container">
-            <div class="wrapper-container">
-                <div class="section-links">
-                    <div class="section-Nosotros">
-                        <h4>Nosotros</h4>
-                        <div class="FooterBox">
-                            <img src="img/fb.png">
-                            <a href="https://www.instagram.com/espacio.pazamor/"><img src="img/instagram.png"></a>
-                        </div>
-                    </div>
-                    <div class="section-ayuda">
-                        <h4>¿Necesitas ayuda?</h4>
-                        <a href="tel:+48521544">48521544</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="views/contacto.html">Contacto</a>
-                    </div>
-                    <div class="section-dondeEstamos">
-                        <h4>¿Donde estamos?</h4>
-                        <a href="views/ubicacion.html">Ubicación</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sub-footer">Dirección General de Defensa y Protección al Consumidor, para consultas y/o denuncias <a href="views/contacto.html">ingrese aquí</a>
-    © Copyright 2021. Todos los derechos reservados | Espacio Paz y Amor.</div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <footer class="container-fluid mt-5 p-4 footer">
+        <article class="row">
+          <div class="col-md-4 mb-5">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark">Redes Sociales</li>
+              <li class="list-group-item">Instagram</li>
+              <li class="list-group-item">Facebook</li>
+              <li class="list-group-item">Twitter</li>
+              <li class="list-group-item">Whatsapp</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-5">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark">Nuestras Sucursales</li>
+              <li class="list-group-item">Villa del Parque</li>
+              <li class="list-group-item">Devoto</li>
+              <li class="list-group-item">Villa Urquiza</li>
+              <li class="list-group-item">Villa Santa Rita</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-5">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark">Legales</li>
+              <li class="list-group-item">Afip</li>
+              <li class="list-group-item">Sobre nosotros</li>
+            </ul>
+          </div>
+
+          <p class="logo-footer">ESPACIO PAZ & AMOR</p>
+    
+        </article>
+      </footer>
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   -->
+
 </body>
+
 </html>
-
-
-
-
