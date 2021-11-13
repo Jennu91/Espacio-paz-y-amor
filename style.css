@@ -7,27 +7,11 @@
           box-sizing: border-box;
 }
 
-.nav-menu {
-  background-image: -moz-linear-gradient(to right, #8a3b49, pink 75%);
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 h1.titulo {
   font-size: 30px;
   text-align: center;
-  color: darkred;
-  margin-top: 50px;
-}
-
-.titulo-quienes-somos {
-  color: gray;
+  color: #000;
+ 
 }
 
 #nuestros-productos {
@@ -48,31 +32,6 @@ ul.menu li.links-menu {
 
 ul.menu li.links-menu a {
   text-decoration: none;
-}
-
-div.caja-quienes-somos {
-  border: 1px solid black;
-  height: 300px;
-  width: 49%;
-  padding: 10%;
-}
-
-.caja-imagen-qs {
-  width: 45%;
-  height: 350px;
-  background-image: url(../img/Pazamor.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  -webkit-animation-name: animation;
-          animation-name: animation;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  position: relative;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
 }
 
 @-webkit-keyframes animation {
